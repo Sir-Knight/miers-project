@@ -2,6 +2,7 @@ import React from 'react';
 import './Gender.css';
 import male from './male-10.jpg';
 
+
 export default class Male extends React.Component{
   render(){
     return(

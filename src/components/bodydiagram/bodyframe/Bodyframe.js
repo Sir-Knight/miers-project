@@ -2,7 +2,7 @@ import React from 'react';
 import TabPanel from 'react-tab-panel';
 import './Bodyframe.css';
 import Male from './Male';
-import Female from './Female';
+import Female from './Female'
 
 const tabStyle = (props) => {
   const baseStyle = {

@@ -3,6 +3,7 @@ import './Bodydiagram.css';
 import Bodyframe from './bodyframe/Bodyframe';
 
 
+
 export default class Bodydiagram extends React.Component{
   render(){
     return(
