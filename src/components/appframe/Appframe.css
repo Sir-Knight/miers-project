@@ -1,0 +1,68 @@
+.Appframe{
+  display: table;
+  margin: 0 auto;
+  margin-top: -32px;
+  width: 97%;
+  height: 670px;
+}
+
+@-webkit-keyframes scan {
+  0% {
+    background-position: 0 -100vh;
+  }
+  20%, 100% {
+    background-position: 0 100vh;
+  }
+}
+@keyframes scan {
+  0% {
+    background-position: 0 -100vh;
+  }
+  20%, 100% {
+    background-position: 0 100vh;
+  }
+}
+
+.wrap {
+  margin: 50px;
+  height: 650px;
+  border: 0.5px solid #ffec6a;
+
+}
+.wrap::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-radius: 1rem;
+
+  background-size: 100%, 100%, 100%, 100%, 100%, 100% 0.35ch;
+}
+.wrap::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  /*background-image: -webkit-linear-gradient(bottom, transparent 0%, rgba(255, 236, 106, 0.2) 2%, rgba(255, 236, 106, 0.8) 3%, rgba(255, 236, 106, 0.2) 3%, transparent 100%);
+  background-image: linear-gradient(0deg, transparent 0%, rgba(255, 236, 106, 0.2) 2%, rgba(255, 236, 106, 0.8) 3%, rgba(255, 236, 106, 0.2) 3%, transparent 100%); */
+  background-repeat: no-repeat;
+  height: 800px;
+  /*-webkit-animation: scan 1.5s linear 0s infinite;
+          animation: scan 1.5s linear 0s infinite;
+*/
+
+}
+.wrap .letter-g span {
+  box-shadow: 0px 0px 3px 1px #c1981a;
+  position: absolute;
+  background-color: #ffec6a;
+}

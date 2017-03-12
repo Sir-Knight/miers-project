@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 h1 {
   font-weight: 800;
   font-size: 3.75em;
@@ -9,59 +11,20 @@ h1 {
   font-weight: 400;
 }
 .menulogo{
-  height: 22%;
+  height: 20%;
   width: 57%;
-  margin-left: 21%;
+
+
 }
-.demo-buttons {
-  font-size: 1em;
-  max-width: 1200px;
-  margin: 2em auto 3em;
-  padding: 0 10em;
-}
-.demo-buttons a {
-  display: inline-block;
-  margin: 0.75em;
-  padding: 1.35em 1.1em;
-  width: 15em;
-  background: #fffce1;
+.image-wrap{
+  width:100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 800;
-  border-top-left-radius: 20px 50px;
-  border-top-right-radius: 20px 50px;
-  border-bottom-right-radius: 20px 50px;
-  border-bottom-left-radius: 20px 50px;
-  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -0.3px rgba(204, 204, 51, 0.9);
 }
-.demo-buttons a.current-demo {
-  background: #c94e50;
-  color: #fffce1;
-}
-.side-button {
-  display: inline-block;
-  width: 5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  cursor: pointer;
-  background: #fffce1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  font-weight: 800;
-}
-.side-button.left {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.side-button.right {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.side-button.active {
-  background: #c94e50;
-  color: #fffce1;
-}
+
 @media screen and (max-width: 40em) {
   main {
     font-size: 80%;
@@ -71,10 +34,7 @@ h1 {
     padding-top: 1em;
     font-size: 2.5em;
       text-align: center;
-  }
-  .demo-buttons {
-    max-width: 900px;
-    padding: 0 2em;
+
   }
 }
 .bm-burger-button {
@@ -98,59 +58,37 @@ h1 {
   background: hsla(194, 100%, 5%, 1);
     text-align: center;
     align-items: center;
+    display: block;
+
 }
 .bm-menu a {
   color: #b8b7ad;
-
 }
 .bm-menu a:hover,
 .bm-menu a:focus {
-  color: #c94e50;
+  color: rgba(204, 204, 51, 1.0);
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+
 
 }
+.bm-item-list {
+  display: block;
+}
 .bm-item-list a {
-  padding: 0.8em;
+  padding: 1.5em;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -0.3px rgba(204, 204, 51, 0.9);
+
 }
 .bm-item-list a span {
   margin-left: 10px;
-  font-weight: 700;
-
-}
-.menu-1 .bm-cross {
-  background: #bdc3c7;
-}
-.menu-1 .bm-menu {
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
-.menu-2 .bm-cross {
-  background: #999;
-}
-.menu-2 .bm-menu {
-  padding: 3.4em 1em 0;
-}
-.menu-2 a {
-  padding: 1em;
-}
-.menu-2 i {
-  font-size: 1.7em;
-  vertical-align: middle;
-  color: #282a35;
-}
-.menu-3 .bm-cross {
-  background: #888;
-}
-.menu-3 .bm-menu {
-  padding: 2em 1em;
-  font-size: 1.15em;
-}
-.menu-3 i {
-  opacity: 0.5;
-}
-.menu-3 span {
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.75em;
+  font-weight: 700;
 }
 .menu-4 .bm-cross {
   background: #888;
@@ -171,7 +109,7 @@ h1 {
 .menu-4 a {
   padding: 1em;
   text-transform: uppercase;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
 }
 .menu-4 a span {
@@ -260,7 +198,7 @@ h1 {
 #fallDown a {
   padding: 1em;
   text-transform: uppercase;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
 }
 #scaleDown a span,

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import mierslogo from './assets/mierslogo.png';
 import './App.css';
 import Coolmenu from './components/menu/Menu';
+import Appframe from './components/appframe/Appframe';
+import Footer from './components/footer/Footer';
+import Clock from './components/clock/Clock';
+
 
 
 class App extends Component {
@@ -9,18 +13,13 @@ class App extends Component {
     return (
 
       <div id="outer-container">
-        <Coolmenu noOverlay pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-        </Coolmenu>
+        <Coolmenu />
           <main id="page-wrap">
             <div className="App">
-
               <img src={mierslogo} className="App-logo" alt="logo" />
-              <h2>Welcome to React</h2>
-
-              <p className="App-intro">
-              To get started, edit <code>src/App.js</code> and save to reload.
-              </p>
-
+              <Clock />
+              <Appframe />
+              <Footer />
             </div>
           </main>
       </div>

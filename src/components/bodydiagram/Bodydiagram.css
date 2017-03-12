@@ -1,0 +1,26 @@
+.Bodydiagram{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.parent_div_1{
+    width:30%;
+    height:630px;
+    border:1px solid grey;
+
+    margin-right:10px;
+    float:left;
+}
+.parent_div_2{
+    width:67.5%;
+    height:630px;
+    border:1px solid grey;
+
+    margin-right:10px;
+    float:left;
+}
+.child_div_1{
+    float:left;
+    margin-right:5px;
+}

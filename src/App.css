@@ -1,8 +1,10 @@
+body{
+background-color: hsla(194, 100%, 5%, 1);
+}
+
 .App {
   text-align: center;
-  background-color: hsla(194, 100%, 5%, 1);
-
-
+  width: 100%;
 }
 
 .App-logo {
@@ -12,9 +14,6 @@
 }
 
 
-.App-intro {
-  font-size: large;
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
