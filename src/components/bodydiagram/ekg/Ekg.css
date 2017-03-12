@@ -1,0 +1,43 @@
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: -1200;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1200;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+svg {
+  margin: 0 -1rem;
+
+}
+.ecg{
+  margin-top: 25px;
+  -ms-transform: scale(0.95, 1); /* IE 9 */
+ -webkit-transform: scale(0.75, 1); /* Safari */
+ transform: scale(0.95, 1);
+}
+
+.ekg {
+  opacity: 1;
+  stroke-dasharray: 600;
+  -webkit-animation: dash 1.5s linear forwards infinite, fade 1.5s linear infinite;
+  animation: dash 1.5s linear forwards infinite, fade 1.5s linear infinite;
+}
