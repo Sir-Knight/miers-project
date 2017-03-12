@@ -1,1 +1,238 @@
+@import url(~react-flex/index.css);
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+.Bodyframe-wrap{
 
+}
+.react-tab-panel{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+}
+.react-tab-panel,
+.react-tab-panel__tab-strip {
+  box-sizing: border-box;
+}
+.react-tab-panel *,
+.react-tab-panel *:before,
+.react-tab-panel *:after,
+.react-tab-panel__tab-strip *,
+.react-tab-panel__tab-strip *:before,
+.react-tab-panel__tab-strip *:after {
+  box-sizing: border-box;
+}
+
+.react-tab-panel {
+  display: inline-flex;
+  width: 100%;
+}
+
+.react-tab-panel__body {
+  overflow: auto;
+  position: relative;
+}
+.react-tab-panel__body .react-tab-panel__transition-wrapper {
+  position: relative;
+  transition-property: height;
+  transition-duration: 0.3s;
+}
+.react-tab-panel__body--transitioning,
+.react-tab-panel__body--transitioning .react-tab-panel__transition-wrapper {
+  overflow: hidden;
+}
+.react-tab-panel__body--transition .react-tab-panel__content--out {
+  transform: translate3d(0px, 0px, 0px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.react-tab-panel__body--transition .react-tab-panel__content--in {
+  transition-duration: 0.3s;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal .react-tab-panel__content--in {
+  top: 0px;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-next .react-tab-panel__content--in {
+  transition-property: left;
+  left: 100%;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-next.react-tab-panel__body--transitioning .react-tab-panel__content--out {
+  transform: translate3d(-100%, 0px, 0px);
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-next.react-tab-panel__body--transitioning .react-tab-panel__content--in {
+  left: 0px;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-prev .react-tab-panel__content--in {
+  transition-property: right;
+  right: 100%;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-prev.react-tab-panel__body--transitioning .react-tab-panel__content--out {
+  transform: translate3d(100%, 0px, 0px);
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-horizontal.react-tab-panel__body--transition-prev.react-tab-panel__body--transitioning .react-tab-panel__content--in {
+  right: 0px;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical .react-tab-panel__content--in {
+  left: 0px;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-next .react-tab-panel__content--in {
+  transition-property: top;
+  top: 100%;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-next.react-tab-panel__body--transitioning .react-tab-panel__content--out {
+  transform: translate3d(0px, -100%, 0px);
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-next.react-tab-panel__body--transitioning .react-tab-panel__content--in {
+  top: 0px;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-prev .react-tab-panel__content--in {
+  transition-property: bottom;
+  bottom: 100%;
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-prev.react-tab-panel__body--transitioning .react-tab-panel__content--out {
+  transform: translate3d(0px, 100%, 0px);
+}
+.react-tab-panel__body--transition.react-tab-panel__body--orientation-vertical.react-tab-panel__body--transition-prev.react-tab-panel__body--transitioning .react-tab-panel__content--in {
+  bottom: 0px;
+}
+
+.react-tab-panel__tab-strip {
+  position: relative;
+  flex: none;
+  overflow: hidden;
+}
+.react-tab-panel__tab-strip:focus {
+  outline: none;
+}
+
+.react-tab-panel__tab-strip-scroll-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.react-tab-panel__tab-strip-scroll-tool {
+  padding: 0px 6px;
+}
+.react-tab-panel__tab-strip-scroll-tool--auto {
+  position: absolute;
+  z-index: 100;
+}
+.react-tab-panel__tab-strip-scroll-tool.react-tab-panel__tab-strip-scroll-tool--direction-left, .react-tab-panel__tab-strip-scroll-tool.react-tab-panel__tab-strip-scroll-tool--direction-right {
+  top: 0px;
+  bottom: 0px;
+}
+.react-tab-panel__tab-strip-scroll-tool.react-tab-panel__tab-strip-scroll-tool--direction-up, .react-tab-panel__tab-strip-scroll-tool.react-tab-panel__tab-strip-scroll-tool--direction-down {
+  left: 0px;
+  right: 0px;
+}
+.react-tab-panel__tab-strip-scroll-tool--direction-left {
+  left: 0px;
+  z-index: 200;
+}
+.react-tab-panel__tab-strip-scroll-tool--direction-right {
+  right: 0px;
+}
+.react-tab-panel__tab-strip-scroll-tool--direction-up {
+  top: 0px;
+  z-index: 200;
+}
+.react-tab-panel__tab-strip-scroll-tool--direction-down {
+  bottom: 0px;
+}
+.react-tab-panel__tab-strip-scroll-tool--disabled {
+  opacity: 0.5;
+}
+.react-tab-panel__tab-strip-scroll-tool--hidden {
+  display: none;
+}
+
+.react-tab-panel__tab-strip-inner {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.react-tab-panel__tab-strip--tab-align-start .react-tab-panel__tab-strip-between,
+.react-tab-panel__tab-strip--tab-align-start .react-tab-panel__tab-strip-before {
+  flex: none;
+}
+
+.react-tab-panel__tab-strip--tab-align-center .react-tab-panel__tab-strip-between {
+  flex: none;
+}
+
+.react-tab-panel__tab-strip--tab-align-end .react-tab-panel__tab-strip-between,
+.react-tab-panel__tab-strip--tab-align-end .react-tab-panel__tab-strip-after {
+  flex: none;
+}
+
+.react-tab-panel__tab-strip--tab-align-space-between .react-tab-panel__tab-strip-before,
+.react-tab-panel__tab-strip--tab-align-space-between .react-tab-panel__tab-strip-after {
+  flex: none;
+}
+
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-strip-before,
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-strip-after {
+  flex: 1;
+}
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-strip-between {
+  flex: none;
+}
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-title,
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-title-inner {
+  flex: 1000 0 auto;
+  display: inline-flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.react-tab-panel__tab-strip--tab-align-stretch .react-tab-panel__tab-title--active {
+  flex: 1001 0 auto;
+}
+
+.react-tab-panel__tab-title {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+.react-tab-panel__tab-title-inner--ellipsis, .react-tab-panel__tab-title--ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.react-tab-panel__tab-title--disabled {
+  cursor: default;
+  user-select: none;
+}
+
+.react-tab-panel__tab-strip--vertical .react-tab-panel__tab-title-inner {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0px;
+}
+.react-tab-panel__tab-strip--vertical.react-tab-panel__tab-strip--tab-position-left .react-tab-panel__tab-title-inner {
+  top: 100%;
+  left: 0px;
+  transform-origin: 0 0;
+  transform: translate(0%, 0%) rotate(-90deg);
+}
+.react-tab-panel__tab-strip--vertical.react-tab-panel__tab-strip--tab-position-right .react-tab-panel__tab-title-inner {
+  left: 100%;
+  top: 0px;
+  transform-origin: 0 0;
+  transform: translate(0%, 0%) rotate(90deg);
+}
+.react-tab-panel__tab-strip--vertical .react-tab-panel__tab-title-inner--hidden {
+  transform: none !important;
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+.react-tab-panel__tab-title-close-icon {
+  display: inline-block;
+}
+.react-tab-panel__tab-title-close-icon-svg {
+  vertical-align: middle;
+}

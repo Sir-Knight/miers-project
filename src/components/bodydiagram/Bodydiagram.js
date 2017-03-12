@@ -8,7 +8,9 @@ export default class Bodydiagram extends React.Component{
     return(
       <div className="Bodydiagram">
 <div className='parent_div_1'>
-<div className='child_div_1'>asd</div>
+<div className='child_div_1'>
+<Bodyframe />
+</div>
 <div className='child_div_2'>asd</div>
 </div>
 <div className='parent_div_2'>
