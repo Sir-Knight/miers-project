@@ -8,6 +8,7 @@
     "react-burger-menu": "^1.10.14",
     "react-dom": "^15.4.2",
     "react-gradient-text": "^0.1.0",
+    "react-modal": "^1.7.2",
     "react-switch-button": "^2.2.1",
     "react-tab-panel": "^2.2.7",
     "react-toggle-switch": "^2.1.3"

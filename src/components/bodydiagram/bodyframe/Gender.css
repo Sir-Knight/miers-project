@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 .genderpics{
   width: 99%;
   margin-top: 20px;
@@ -7,4 +9,8 @@
   width: 99%;
   margin-top: 20px;
 
+}
+
+.title{
+    font-family: 'Orbitron', sans-serif;
 }
