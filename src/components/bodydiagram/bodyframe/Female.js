@@ -57,7 +57,7 @@ export default class Female extends React.Component{
       <area shape="circle" coords="270,65,35" alt="headback" onClick={this.openModal} href="#"/>
       <area shape="circle" coords="180,150,37" alt="ShouldersMerge" onClick={this.openModal} href="#"/>
       <area shape="circle" coords="20,150,37" alt="ShouldersFront" onClick={this.openModal} href="#"/>
-      <area shape="circle" coords="350,150,37" alt="ShouldersBack" onClick={this.openModal} href="#"/>
+      <area shape="circle" coords="330,150,37" alt="ShouldersBack" onClick={this.openModal} href="#"/>
       <area shape="circle" coords="180,285,43" alt="armHandsMerge" onClick={this.openModal} href="#"/>
       <area shape="circle" coords="20,285,37" alt="armHandsFront" onClick={this.openModal} href="#"/>
       <area shape="circle" coords="350,285,37" alt="armHandsBack" onClick={this.openModal} href="#"/>

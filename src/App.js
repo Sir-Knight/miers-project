@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import mierslogo from './assets/mierslogo.png';
 import './App.css';
 import Coolmenu from './components/menu/Menu';
-import Appframe from './components/appframe/Appframe';
 import Footer from './components/footer/Footer';
 import Clock from './components/clock/Clock';
+import Bodydiagram from './components/bodydiagram/Bodydiagram';
+import { connect } from 'react-redux';
 
 
 
@@ -18,7 +19,15 @@ class App extends Component {
             <div className="App">
               <img src={mierslogo} className="App-logo" alt="logo" />
               <Clock />
-              <Appframe />
+              <div className="Appframe">
+              <div className="wrap">
+               <div className="letter">
+                 <div className="letter-g">
+                    <Bodydiagram />
+                 </div>
+               </div>
+              </div>
+              </div>
               <Footer />
             </div>
           </main>

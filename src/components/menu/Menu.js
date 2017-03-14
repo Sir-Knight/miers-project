@@ -1,6 +1,7 @@
 import React from 'react';
 import './Menu.css';
 import miers_logo from './miers_logo.jpg';
+  
 
 var Menu = require('react-burger-menu').scaleRotate;
 
