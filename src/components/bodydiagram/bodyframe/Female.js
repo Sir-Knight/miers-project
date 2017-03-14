@@ -2,7 +2,7 @@ import React from 'react';
 import './Gender.css';
 import female from './female-08.jpg';
 import Modal from 'react-modal';
-import List from '../list/List';
+import List from '../List';
 
 const customStyles = {
   overlay : {
@@ -48,6 +48,7 @@ export default class Female extends React.Component{
   }
 
   render(){
+      let {onAddList} = this.props
     return(
 
       <div className="gendermap">
@@ -79,7 +80,7 @@ export default class Female extends React.Component{
           contentLabel="Example Modal"
         >
           <h2 className="title" ref="subtitle">SELECT INJURIES</h2>
-          <List />
+          <List onAddList={this.addList}/>
         </Modal>
       </div>
      </div>

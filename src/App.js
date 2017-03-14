@@ -5,7 +5,6 @@ import Coolmenu from './components/menu/Menu';
 import Footer from './components/footer/Footer';
 import Clock from './components/clock/Clock';
 import Bodydiagram from './components/bodydiagram/Bodydiagram';
-import { connect } from 'react-redux';
 
 
 

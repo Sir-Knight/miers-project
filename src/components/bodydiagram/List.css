@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    overflow-y: auto;
+    border: none;
+    border-radius: 2px;
+    background-color: grey;
+    font-family: 'Orbitron', sans-serif;
+    scrollbar-face-color: #b46868;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #9b8e37;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.Liststyle{
+ text-align: center;
+}
+
+ul{
+  line-height: 200%;
+  list-style-position: outside;
+  list-style-type: none;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: left;
+
+}
+
+ul li {
+    background:  grey;
+    margin-top: 5px;
+    margin-left: -40px;
+    -webkit-animation: cssAnimation 0.7s 1 ease;
+  -moz-animation: cssAnimation 0.7s 1 ease;
+  -o-animation: cssAnimation 0.7s 1 ease;
+
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(0.976) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(0.976) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(0.976) skew(1deg) translate(0px); }
+}

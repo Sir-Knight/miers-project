@@ -18,7 +18,12 @@ const tabStyle = (props) => {
 }
 
 export default class Bodyframe extends React.Component{
+  constructor(props) {
+    super(props);
+
+  }
   render(){
+    let {onAddList} = this.props
     return(
       <div className="Bodyframe-wrap">
         <TabPanel
@@ -30,10 +35,10 @@ export default class Bodyframe extends React.Component{
           //try "stretch", "space-between", "start", "end"
         >
           <div tabTitle="MALE">
-          <Male />
+          <Male onAddList={this.addList}/>
           </div>
           <div tabTitle="FEMALE">
-          <Female />
+          <Female onAddList={this.addList}/>
           </div>
 
         </TabPanel>
