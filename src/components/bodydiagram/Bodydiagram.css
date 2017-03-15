@@ -42,3 +42,28 @@
    margin-top: 10px;
    margin-right:5px;
 }
+.child_div_4{
+  width: 56.5%;
+  height: 396px;
+   background-color: black;
+   float:left;
+   margin-top: 10px;
+   margin-right:5px;
+}
+.thermodiv{
+  margin-left: -60%;
+  margin-top: 10%;
+}
+.blooddrip{
+  width: 35%;
+  height: 250px;
+ background-color:  rgba(82, 5, 17, 1);
+ margin-left: 51%;
+ margin-top: -48%;
+}
+.bloodpool{
+  width: 100%;
+  height: 50px;
+  background: grey;
+  padding-top: 130px;
+}
