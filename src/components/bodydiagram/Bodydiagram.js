@@ -36,7 +36,7 @@ export default class Bodydiagram extends React.Component{
       <div className="Bodydiagram">
         <div className='parent_div_1'>
           <div className='child_div_1'>
-            <Bodyframe />
+            <Bodyframe onAddList={this.addList}/>
           </div>
 
         </div>

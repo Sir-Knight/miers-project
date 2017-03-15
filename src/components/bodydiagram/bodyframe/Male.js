@@ -49,7 +49,6 @@ export default class Male extends React.Component{
   }
 
   render(){
-      let {onAddList} = this.props
     return(
 
       <div className="gendermap">
@@ -81,7 +80,7 @@ export default class Male extends React.Component{
           contentLabel="Example Modal"
         >
           <h2 className="title" ref="subtitle">SELECT INJURIES</h2>
-          <List onAddList={this.addList}/>
+          <List onAddList={this.props.addList}/>
         </Modal>
       </div>
      </div>
