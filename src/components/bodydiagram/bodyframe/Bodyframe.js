@@ -23,7 +23,7 @@ export default class Bodyframe extends React.Component{
 
   }
   render(){
-
+       console.log(this.props.addList)
     return(
       <div className="Bodyframe-wrap">
         <TabPanel
@@ -34,11 +34,12 @@ export default class Bodyframe extends React.Component{
            tabStyle={tabStyle}
           //try "stretch", "space-between", "start", "end"
         >
+
           <div tabTitle="MALE">
-          <Male onAddList={this.props.addList}/>
+          <Male addList={this.props.addList}/>
           </div>
           <div tabTitle="FEMALE">
-          <Female onAddList={this.props.addList}/>
+          <Female addList={this.props.addList}/>
           </div>
 
         </TabPanel>

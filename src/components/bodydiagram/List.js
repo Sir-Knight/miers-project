@@ -15,14 +15,15 @@ export default class List extends React.Component {
     this.setState({value: event.target.value});
   }
  addSubmit(){
-   let {onAddList} = this.props
-   onAddList(this.state.value)
+   let {addList} = this.props
+   addList(this.state.value)
    this.setState({
      value: ""
    })
  }
 
   render() {
+     console.log(this.props.addList)
     let {value} = this.state
     return (
       <div className="Liststyle">

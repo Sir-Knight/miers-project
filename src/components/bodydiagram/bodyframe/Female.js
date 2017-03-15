@@ -79,7 +79,7 @@ export default class Female extends React.Component{
           contentLabel="Example Modal"
         >
           <h2 className="title" ref="subtitle">SELECT INJURIES</h2>
-          <List onAddList={this.props.addList}/>
+          <List addList={this.props.addList}/>
         </Modal>
       </div>
      </div>

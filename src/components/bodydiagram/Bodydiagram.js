@@ -32,17 +32,17 @@ export default class Bodydiagram extends React.Component{
 
   render(){
     let {listStore} = this.state
+      console.log(this.addList)
     return(
       <div className="Bodydiagram">
         <div className='parent_div_1'>
           <div className='child_div_1'>
-            <Bodyframe onAddList={this.addList}/>
+            <Bodyframe  addList={this.addList}/>
           </div>
 
         </div>
         <div className='parent_div_2'>
           <div className='child_div_2'>
-            <List onAddList={this.addList}/>
             <Shownlist items={listStore}/>
           </div>
           <div className='child_div_3'>
