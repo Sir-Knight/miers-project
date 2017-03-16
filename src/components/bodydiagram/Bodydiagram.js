@@ -3,7 +3,6 @@ import './Bodydiagram.css';
 import Bodyframe from './bodyframe/Bodyframe';
 import Ekg from './ekg/Ekg';
 import Shownlist from './Shownlist';
-import List from './List';
 import Thermo from './thermometer/Thermo';
 import Blood from './blooddrip/Blood';
 
@@ -24,15 +23,15 @@ export default class Bodydiagram extends React.Component{
       listStore: this.state.listStore.concat([value])
     })
   }
-  removeList(index) {
-    var newData = this.state.listStore.slice(); //copy array
-    newData.splice(index, 1); //remove element
-    this.setState({listStore: newData}); //update state
+  removeList(items) {
+    this.listStore.splice(items, 1);
+     this.setState({listStore: this.listStore});
   }
 
   render(){
     let {listStore} = this.state
       console.log(this.addList)
+      console.log(this.removeList)
     return(
       <div className="Bodydiagram">
         <div className='parent_div_1'>
@@ -43,7 +42,13 @@ export default class Bodydiagram extends React.Component{
         </div>
         <div className='parent_div_2'>
           <div className='child_div_2'>
-            <Shownlist items={listStore}/>
+
+          <div className='showTitle'>
+           INJURIES SELECTED
+          </div>
+            <div className='showlist'>
+            <Shownlist items={listStore} removeList={this.removeList}/>
+            </div>
           </div>
           <div className='child_div_3'>
             <Ekg />

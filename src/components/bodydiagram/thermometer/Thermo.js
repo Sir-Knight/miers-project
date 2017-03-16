@@ -1,6 +1,5 @@
 import React from 'react';
 import './Thermo.css';
-import $ from 'jquery';
 
 
 

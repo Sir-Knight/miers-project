@@ -18,7 +18,7 @@ export default class List extends React.Component {
    let {addList} = this.props
    addList(this.state.value)
    this.setState({
-     value: ""
+
    })
  }
 

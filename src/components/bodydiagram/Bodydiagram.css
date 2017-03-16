@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 .Bodydiagram{
   margin-left: 10px;
   margin-top: 10px;
   width: 100%;
 }
+.showTitle{
+  width: 23.85%;
+  height: 40px;
+  background-color: #9b8e37;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 20px;
+  position: absolute;
+}
+.showlist{
+ margin-top: 17.5%;
+}
+.child_div_2::-webkit-scrollbar { width: 0 !important }
 
 .parent_div_1{
     width:30%;
@@ -32,6 +46,7 @@
   margin-right:10px;
   float:left;
   background-color: black;
+  overflow: auto;
 }
 .child_div_3{
   width: 56.5%;

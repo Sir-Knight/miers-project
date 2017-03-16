@@ -18,10 +18,7 @@ const tabStyle = (props) => {
 }
 
 export default class Bodyframe extends React.Component{
-  constructor(props) {
-    super(props);
 
-  }
   render(){
        console.log(this.props.addList)
     return(

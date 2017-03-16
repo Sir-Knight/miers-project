@@ -79,6 +79,7 @@ export default class Male extends React.Component{
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Example Modal"
+
         >
           <h2 className="title" ref="subtitle">SELECT INJURIES</h2>
           <List addList={this.props.addList}/>
