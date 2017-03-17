@@ -16,6 +16,7 @@ export default class Bodydiagram extends React.Component{
       listStore: []
     }
     this.addList = this.addList.bind(this)
+    this.removeList = this.removeList.bind(this)
   }
 
   addList(value) {
@@ -23,9 +24,11 @@ export default class Bodydiagram extends React.Component{
       listStore: this.state.listStore.concat([value])
     })
   }
-  removeList(items) {
-    this.listStore.splice(items, 1);
-     this.setState({listStore: this.listStore});
+  removeList(showIndex) {
+    var newData = this.state.listStore;
+    var index = newData.indexOf(showIndex.target.value)
+    newData.splice(index, 1);
+     this.setState({listStore: newData});
   }
 
   render(){

@@ -17,9 +17,7 @@ export default class List extends React.Component {
  addSubmit(){
    let {addList} = this.props
    addList(this.state.value)
-   this.setState({
-
-   })
+   
  }
 
   render() {

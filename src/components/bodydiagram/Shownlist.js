@@ -1,5 +1,6 @@
 import React from 'react';
 import Liststore from './Liststore';
+import './List.css';
 
 
 export default class Shownlist extends React.Component {
@@ -11,7 +12,7 @@ export default class Shownlist extends React.Component {
       <div>
       <ul>
       {
-        items.map(show => <li key={show.id}><Liststore text={show} /> <button onClick={this.props.removeList}>REMOVE</button></li>)
+        items.map((show, showIndex) => <li key={showIndex}><Liststore text={show} /> <button className="removeButton" value={showIndex} onClick={this.props.removeList}>REMOVE</button></li>)
       }
       </ul>
       </div>

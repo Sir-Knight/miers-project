@@ -10,6 +10,18 @@ select {
     font-family: 'Orbitron', sans-serif;
     scrollbar-face-color: #b46868;
 }
+.removeButton{
+  background-color: #9b8e37;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-top: -28px;
+}
+.removeButton:hover{
+     background: red;
+}
 
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #9b8e37;
