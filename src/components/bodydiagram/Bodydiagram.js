@@ -2,6 +2,7 @@ import React from 'react';
 import './Bodydiagram.css';
 import Bodyframe from './bodyframe/Bodyframe';
 import Ekg from './ekg/Ekg';
+import Ecg from './ekg/Ecg';
 import Shownlist from './Shownlist';
 import Thermo from './thermometer/Thermo';
 import Blood from './blooddrip/Blood';
@@ -54,7 +55,9 @@ export default class Bodydiagram extends React.Component{
             </div>
           </div>
           <div className='child_div_3'>
-            <Ekg />
+          <div>
+            <Ecg />
+            </div>
           </div>
           <div className='child_div_4'>
             <div className='thermodiv'>
