@@ -1,0 +1,11 @@
+.info_parent_div_1, .info_parent_div_2, .info_parent_div_3{
+    width:100px;
+    height:100px;
+    border:1px solid red;
+    margin-right:10px;
+    float:left;
+}
+.info_child_div_1{
+    float:left;
+    margin-right:5px;
+}
