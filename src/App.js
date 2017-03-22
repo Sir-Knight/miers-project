@@ -23,7 +23,7 @@ export default class App extends React.Component{
               <div className="wrap">
                <div className="letter">
                  <div className="letter-g">
-                    <Bodydiagram />
+                    {this.props.children}
                  </div>
                </div>
               </div>
