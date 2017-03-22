@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import mierslogo from './assets/mierslogo.png';
 import './App.css';
 import Coolmenu from './components/menu/Menu';
@@ -9,7 +9,7 @@ import { Router, Route, hashHistory } from 'react-router';
 
 
 
-class App extends Component {
+export default class App extends React.Component{
   render() {
     return (
 
@@ -36,5 +36,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
