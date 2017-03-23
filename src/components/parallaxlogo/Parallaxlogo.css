@@ -1,0 +1,9 @@
+.Parallaxlogo{
+position: absolute;
+ margin-left: 28%;
+ margin-top: 5%;
+ display: flex;
+ justifyContent: center;
+ alignItems: center;
+ backgroundColor: rgba(238; 239; 244; 1);
+}

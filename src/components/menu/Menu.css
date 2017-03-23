@@ -13,8 +13,15 @@ h1 {
 .menulogo{
   height: 20%;
   width: 57%;
-
-
+}
+.menu-item{
+  width: 100%;
+}
+.menuLink{
+  padding: 25px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -0.3px rgba(204, 204, 51, 0.9);
 }
 .image-wrap{
   width:100%;
@@ -80,9 +87,6 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   text-decoration: none;
   color: grey;
-  text-transform: uppercase;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  box-shadow: inset 0 -0.3px rgba(204, 204, 51, 0.9);
 
 }
 .bm-item-list a span {
