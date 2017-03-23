@@ -12,8 +12,8 @@ const tabStyle = (props) => {
   return Object.assign(
     baseStyle,
     props.active?
-      { color: 'rgba(204, 204, 51, 0.8)' }:
-      { background: 'gray' }
+      { background: 'gray', color: 'rgba(204, 204, 51, 0.8)' }:
+      { color: 'gray' }
   )
 }
 
